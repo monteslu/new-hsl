@@ -96,7 +96,7 @@
         <h2>HeatSync Labs Live Webcams</h2>
         <p>
           See if there are people in the lab! <br />The camera views refresh at
-          least every 1.5 seconds, though you may not be able to tell if
+          least every 0.5 seconds, though you may not be able to tell if
           nothing's moving. <br />
           If the cameras are broken, please email
           operations at heatsynclabs dot org and mention "web cams" in the subject line.
@@ -265,7 +265,7 @@
       
       
       document.addEventListener("DOMContentLoaded", () => {
-        setInterval(refresh, 1500);
+        setInterval(refresh, 500);
 
         doors().then(console.log).catch(console.error);
       });
